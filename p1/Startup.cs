@@ -33,6 +33,7 @@ namespace p1
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello from first branch");
+                    await context.Response.WriteAsync("Hello from first branch on remote repo");
                 });
             });
         }
